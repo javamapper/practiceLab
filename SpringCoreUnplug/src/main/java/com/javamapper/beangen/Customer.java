@@ -1,4 +1,4 @@
-package com.mapper.beangen;
+package com.javamapper.beangen;
 
 public class Customer {
 

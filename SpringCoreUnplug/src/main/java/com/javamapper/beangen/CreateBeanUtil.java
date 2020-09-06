@@ -1,4 +1,4 @@
-package com.mapper.beangen;
+package com.javamapper.beangen;
 
 import java.io.IOException;
 import java.lang.reflect.Field;

@@ -1,4 +1,4 @@
-package com.mapper.beangen;
+package com.javamapper.beangen;
 
 import java.util.ArrayList;
 import java.util.Arrays;
