@@ -1,0 +1,6 @@
+com.javamapper.Product
+productId:Integer,pName:String,productPrice:Double,available:Boolean
+101,prod101,100.00,true
+102,prod102,112.00,false
+103,prod103,122.00,false
+104,prod104,140.00,true
