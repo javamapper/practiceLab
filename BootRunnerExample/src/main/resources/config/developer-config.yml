@@ -1,0 +1,47 @@
+dev:
+ detail:
+  devName: Anil Kumar
+  dev-rating: 8
+  experience: 7
+  devSSOID: SSO50523
+  email-id: solutionrunnerblog@gmail.com
+  designation: Lead Eng.
+  exprienceDetailLog:
+    skillExpertice: Java
+    skills:  
+      -
+        skillName: Java
+        lastUsedDate: 10/03/2020T16:20:30:717 UTC+05:30
+        experienceInSkill: 4
+        ratingInSkill: 7
+        projectsUsedSkill: true
+        depthUsedSkillRating: 6
+      -
+        skillName: React
+        lastUsedDate: 10/03/2020T16:20:30:717 UTC+05:30
+        experienceInSkill: 4
+        ratingInSkill: 7
+        projectsUsedSkill: true
+        depthUsedSkillRating: 7
+    projectWithDetail:
+      -
+        projectName: Ctrix UI Solutions
+        skillNames: 
+         - Java
+         - React
+         - Docker
+         - SpringBoot
+        teamSize: 4
+        startDate: 10/03/2016T16:20:30:717 UTC+05:30
+        endDate: 10/03/2018T16:20:30:717 UTC+05:30
+      -
+        projectName: Toxit Org.
+        skillNames: 
+         - Java
+         - JavaScript
+         - Kubernete
+         - SpringBoot
+        teamSize: 6
+        startDate: 10/03/2016T16:20:30:717 UTC+05:30
+        endDate: 10/03/2018T16:20:30:717 UTC+05:30
+    

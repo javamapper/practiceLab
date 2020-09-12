@@ -1,0 +1,40 @@
+info:
+ data:
+  customer:
+   id: 201
+   name: Anil
+   invoice: 
+    id: I5343
+    num: 201I89773
+   order:
+    id: O8989
+    date: 10/03/2020T16:20:30:717 UTC+05:30
+
+entity:
+ data:
+  developer-id: 102
+  developer-name: Anil Kumar
+  belongingProject: Sales
+  isActive: true
+  developerGrade: A
+  entity-names: 
+   - Customer
+   - Employee
+   - Address
+   - PaymentDetail
+   - Payment
+  entity-columns: 
+    customer : cid,name,orderId,invoiceId,addressId
+    employee : eid,name,salary,deptId
+    address  : addrId,addrDesc1,addrDesc2,pinCode,state,country
+
+ 
+data:
+ random:
+  string-value: ${random.value}
+  int-value: ${random.int}
+  long-value: ${random.long}
+  int-range-value: ${random.int[40]}
+  long-range-btwin-value: ${random.long[400,1000]}
+  int-range-btwin-value: ${random.int[10,100]}
+  uuid-value: ${random.uuid}

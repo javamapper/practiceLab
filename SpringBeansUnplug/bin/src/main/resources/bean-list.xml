@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean name="com.entity.Customer" class="com.javamapper.beangen.Customer">
+        	<property name="cid" value="101"/>
+        	<property name="name" value="Anil"/>
+        	<property name="investAmt" value="4000.00"/>
+        </bean>
+        <bean name="com.entity.Order" class="com.javamapper.beangen.Order" autowire="byType">
+        	<property name="orderId" value="401"/>
+        <!--<property name="customer" ref="com.entity.Customer"/>  --> <!--  As we using autowire=byType so no need to use this line -->
+			<property name="sellingAmt" value="1220.00"/>
+			<property name="discountAmt" value="20.00"/>
+			<property name="totalAmt" value="1200.00"/>
+        </bean>
+        
+</beans>
