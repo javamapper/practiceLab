@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "1aeec36e-61ad-4686-944b-2c8c1ed1e4cb",
+		"name": "mywork",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SaveTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"requestBody\": {\n        \"task\": {\n            \"title\": \"task-11\",\n            \"startDate\": \"2021-10-21T18:30:00.000+00:00\",\n            \"dueDate\": \"2021-10-21T18:30:00.000+00:00\",\n            \"status\": 0,\n            \"priority\": 3,\n            \"description\": \"task one run now\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/task/savetask",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"task",
+						"savetask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveTask With CheckList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"requestBody\": {\n        \"task\": {\n            \"title\": \"task-12\",\n            \"startDate\": \"2021-10-21T18:30:00.000+00:00\",\n            \"dueDate\": \"2021-10-21T18:30:00.000+00:00\",\n            \"status\": 0,\n            \"priority\": 3,\n            \"description\": \"task one run now\",\n            \"checkList\": {\n                \"checkListID\": {\n                    \"taskId\": 12\n                },\n                \"todo\": \"todo description-12\",\n                \"completed\": true\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/task/savetaskWithCheckList",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"task",
+						"savetaskWithCheckList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTask",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/task/alltask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"task",
+						"alltask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checklist with todoId and taskId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/task/checklist?todoId=3&taskId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"task",
+						"checklist"
+					],
+					"query": [
+						{
+							"key": "todoId",
+							"value": "3"
+						},
+						{
+							"key": "taskId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checklist for todoId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/task/checklist/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"task",
+						"checklist",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "h2-console",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/h2-console",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"h2-console"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
